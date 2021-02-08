@@ -1,0 +1,35 @@
+div {
+  margin: 10px 600px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label, button {
+  display: block;
+  font-family: Comic Sans MS;
+  text-transform: uppercase;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+button {
+  background: lime;
+  margin-top: 15px;
+  padding: 25px;
+  border-color: lime;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  font-family: Verdana;
+  font-size: 20px;
+  border-color: lime; 
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+}

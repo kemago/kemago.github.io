@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - F08_Bonyolult_űrlap</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="interestingForm">
+  <fieldset>
+    <legend> Interesting application form :) </legend>
+    
+    <fieldset>
+     <legend>What is your name?</legend> 
+       <input type="text" id="inputName"/>
+    </fieldset>  
+
+    <fieldset> 
+      <legend>What is your favorite color?</legend>
+         <input type="checkbox" id="redColor" name="color">
+           <label for="redColor">Red</label> <br/>
+         <input type="checkbox" id="greenColor" name="color">
+           <label for="greenColor">Green</label> <br/>
+         <input type="checkbox" id="blueColor" name="color">
+           <label for="blueColor">Blue</label> <br/>
+         <input type="checkbox" id="otherColor" name="color">
+           <label for="otherColor">Other</label> 
+         <input type="text" id="otherColorText" name="color"> 
+    </fieldset>
+    
+    <fieldset>
+      <legend>Would you like to become a developer?</legend>
+       <input type="radio" id="yesDeveloper" name="developer">
+        <label for="yesDeveloper">Yes</label> <br/>
+       <input type="radio" id="anoDeveloper" name="developer">
+        <label for="anoDeveloper">Ano</label> <br/>
+      <input type="radio" id="igenDeveloper" name="developer">
+        <label for="igenDeveloper">Igen</label> <br/>
+      <input type="radio" id="haiDeveloper" name="developer">
+        <label for="haiDeveloper">五</label> 
+    </fieldset>
+
+    <fieldset>
+      <legend>Why would you like to become a developer?</legend>
+        <textarea name="comment" form="interestigForm"></textarea>
+    </fieldset>
+    
+    <button type="submit" id="buttonSubmit">Submit</button>  
+    
+  </fieldset>
+</form>
+<!-- partial -->
+  
+</body>
+</html>

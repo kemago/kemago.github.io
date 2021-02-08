@@ -1,0 +1,23 @@
+div {
+  display: block;
+  margin: 10px;
+  font-family: 'Arsenal', sans-serif;
+  
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: lime;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: red;
+}

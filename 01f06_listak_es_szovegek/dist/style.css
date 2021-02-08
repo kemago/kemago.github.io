@@ -1,0 +1,27 @@
+#main {
+  margin: 100px 500px 100px 500px;
+}
+
+h1 {
+  color: OrangeRed;
+}
+
+h2 {
+   color: purple;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.color {
+  color: #da70d6;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
