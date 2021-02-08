@@ -1,3 +1,72 @@
+html {
+  background-color: cornsilk;
+}
+
 p {
-    color: red;
+    font-size: 18px;
   }
+
+h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  color:rgba(53, 48, 38, 0.924);
+  font-size: 80px;
+  font-variant:small-caps; 
+  letter-spacing: 6px; 
+}
+
+h2 {
+  font-family: 'Covered By Your Grace', cursive;
+  letter-spacing: 6px; 
+  color:DarkOliveGreen;
+  background-color: rgba(93, 84, 66, 0.342);
+  font-size: 28px;
+  padding: 12px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(14, 26, 26);
+}
+
+a:active {
+  text-decoration: none;
+  color: rgb(14, 26, 26);
+}
+
+a:link {
+  text-decoration: none;
+  color:  rgb(14, 26, 26);
+}
+
+a:visited {
+  text-decoration: none;
+  color: DarkSlateGray;
+}
+
+#header {
+  text-align: center;
+  border: DarkOliveGreen solid 2px;
+  margin: 0 auto 0 auto;
+  padding: 0 400px 100px 400px;
+  background-color: DarkSeaGreen;
+  width: 800px;
+  height: 100px;
+}
+
+.content {
+  margin: 30px 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.column {
+  background-color: rgba(207, 183, 134, 0.342);
+  border: DarkOliveGreen solid 1px;
+  padding: 40px;
+  width: 440px;
+  height: 500px;
+}
