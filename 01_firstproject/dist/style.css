@@ -1,0 +1,42 @@
+div {
+  background: orange;
+  padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  background: red;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid white;
+  padding: 100px 60px 40px 20px;
+  width: 900px;
+  height: 100px;
+  font-size: 60px;
+  font-weight: 100px;
+}
+
+h3 {
+  color: lime;
+  background: blue;
+  margin-left: 30px;
+  margin-top: 18px;
+  margin-right: 1500px;
+  margin-bottom: 0;
+}
+
+p, ol {
+  margin: 0;
+}
+
+li, #nevInputMezo {
+  background: pink;
+}
+
+.citrom {
+  background: yellow;
+}
+
+.nagybetus{
+  font-size: 40px;
+}
