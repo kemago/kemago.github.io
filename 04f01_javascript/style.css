@@ -1,0 +1,38 @@
+body {
+   width: 1000px;
+    background-color: wheat;
+    margin: 0 auto;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
+
+.boxes {
+  width: 700px;
+  border: solid#2e80eb 2px;
+  margin-bottom: 10px; 
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#boxes_colored {
+  background-color: rgb(212, 68, 68);
+}  
+  
+.item {
+  width: 140px;
+  height: 50px;
+  margin: 10px;
+}
+
+.blue {
+  background-color: #2e80eb;
+}
+
+.item.purple {
+  background-color: #610e90;
+}
