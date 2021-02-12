@@ -1,42 +1,49 @@
 /* Feladatok
 1. feladat
-Hozz létre változókat a következő nevekkel és értékekkel:
-    color: purple
-    number: 10
-    word: cool */
+Hozz létre egy tömböt, ami tartalmazza a saját neved, 
+valamint azon kívül néhány másik nevet is
+*/
 
-let color = 'purple'
-let number = 10
-let word = "cool"
+names = ['Ago', 'Ami', 'Bali', 'Peti', 'Réka', 'Bálint']
 
 /* 2. feladat
-Változtasd meg az első doboz háttérszínét lilára, 
-ha a color változó értéke purple
+A forEach ciklus használatával 
+add hozzá a neveket egy listához (<ul>)
  */
-if (color == 'purple') {
-    $('.north').css('background-color', 'purple');
+
+function egyElemKiiras(listItem) {
+    $( '.myList' ).append( '<li>names</li>' );
+    $( '.myList div: last-of-type' ).css('font-weight', 'bold')
 } 
 
-/* 3. feladat
-Változtasd meg a második HTML elem szövegét 
-az alábbi kritérium alapján:
-    ha a number nagyobb, mint 100: wow, de nagy szám
-    különben: ez csak egy közönséges szám
- */
-if (number > 100) {
-        $('.east').text('wow, de nagy szám')
-    } else {
-        $('.east').text('ez csak egy közönséges szám')
-}
+names.forEach(egyElemKiiras);
 
-/* 4. feladat
-Változtasd meg a harmadik elem szövegét arra, 
-hogy A DOM Ereje, ha a word értéke az, 
-hogy cool, különben pedig változtasd meg erre 
-a negyedik elem szövegét
- */
-if (word == 'cool') {
-    $('.south').text('A DOM ereje')
-} else {
-    $('.west').text('A DOM ereje')
-}
+// azt nem értem, hogy miért a tömbváltozó nevét írja ki...
+
+/* 3. feladat 
+Hozd létre a következő objektumot:
+let additionalBlock = {
+  title: "Beillesztve JavaScripttel",
+  text: "Ez a blokk a JavaScript jQuery könyvtárával lett beillesztve. Király!"
+};
+
+*/
+
+let additionalBlock = {
+  title: "Beillesztve JavaScripttel",
+  text: "Ez a blokk a JavaScript jQuery könyvtárával lett beillesztve. Király!"
+};
+
+/* 4. feladat 
+Adj új tartalmat az oldal végéhez: 
+a title legyen egy fejlécben (pl. <h1>), 
+a text pedig egy bekezdésben (<p>)};
+*/
+
+$('body').append(
+    '<h1>additionalBlock.title</h1>'
+  );
+
+$('body').append(
+    '<p>additionalBlock.text</p>'
+);
