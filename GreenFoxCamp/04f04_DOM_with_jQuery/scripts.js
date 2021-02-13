@@ -12,13 +12,14 @@ add hozzá a neveket egy listához (<ul>)
  */
 
 function egyElemKiiras(listItem) {
-    $( '.myList' ).append( '<li>names</li>' );
+    $( '.myList' ).append( ´<li>´${names}</li>' );
     $( '.myList div: last-of-type' ).css('font-weight', 'bold')
 } 
 
 names.forEach(egyElemKiiras);
 
 // azt nem értem, hogy miért a tömbváltozó nevét írja ki...
+// most már tudom, az a fránya 3. fajta idézőjel kell
 
 /* 3. feladat 
 Hozd létre a következő objektumot:
@@ -41,7 +42,7 @@ a text pedig egy bekezdésben (<p>)};
 */
 
 $('body').append(
-    '<h1>additionalBlock.title</h1>'
+    <h1>${additionalBlock}.title</h1>´´
   );
 
 $('body').append(

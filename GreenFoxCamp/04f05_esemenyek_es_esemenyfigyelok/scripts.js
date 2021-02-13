@@ -89,3 +89,4 @@ mikor új szín kerül az input mezőbe,
     Így legfeljebb csak egyszer változtathatjuk meg a gomb színét.
 */
 
+//.attr('disable') MDM-en érdemes megnézni
