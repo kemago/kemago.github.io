@@ -1,0 +1,60 @@
+body {
+   width: 1000px;
+   background-color: wheat;
+   margin: 0 auto;
+   padding: 100px;
+}
+
+#container {
+  width: 500px;
+  height: 800px;
+  background-color:goldenrod;
+  padding: 10px 100px 0 100px;;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 5px; 
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+h1, h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  color: brown;
+  text-align: center;
+
+}
+
+#content {
+  width: 320px;
+  height: 500px;
+  background-color: white;
+  padding: 20px 90px;
+}
+
+#inputField {
+  width: 200px;
+  height: 40px;
+  background-color:navajowhite;
+  font-size: 28px;
+  margin-right: 0;
+}
+
+.addGomb {
+  background-color:lightcoral;
+  width: 100px;
+  height: 45px;
+  font-size: 28px;
+  margin-left: 0;
+  border: 0px;
+}
+
+li {
+  list-style-type: None;
+}

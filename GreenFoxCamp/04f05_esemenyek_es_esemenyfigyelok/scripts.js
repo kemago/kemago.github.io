@@ -77,7 +77,7 @@ $('#esemenyGomb3').click(function () {
     $("#esemenyGomb3").css('background-color', szovegADobozban) ;
     $("#esemenyGomb3").css('color', "white") ;
 
-    $("#esemenyGomb3").text('Most meg kék lett a háttér, fehér betűkkel')
+    $("#esemenyGomb3").text('Most meg más lett a háttér, fehér betűkkel')
 
 })
 
