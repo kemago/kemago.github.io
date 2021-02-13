@@ -1,14 +1,15 @@
 header {
-  background: purple;
+  background-color: purple;
   height: 50px;
   display: flex;
+  gap: 10px;
   align-items: center;
 }
 
 main {
   background: yellow;
   height: 500px;
-  flex-grow: 4;
+  flex-grow: 3;
 }
 
 aside {
@@ -17,12 +18,14 @@ aside {
   flex-grow: 1;
 }
 
-button {
+.item {
   background: cyan;
   width: 80px;
   height: 30px;
+  margin-right: 10px;
 }
 
 div {
   display: flex;
+  height: 500px;
 }

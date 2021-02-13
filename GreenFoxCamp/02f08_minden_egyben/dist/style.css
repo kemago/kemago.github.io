@@ -1,6 +1,6 @@
 #page {
-  width: 600px;
-  margin-left: 280px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #header {
@@ -8,12 +8,12 @@
   height: 70px;
   width: 550px;
   display: flex;
-  flex-flow: row wrap;
+  /*flex-flow: row wrap;*/
   align-items: center;
   position: fixed;
   top: 0;
   padding-left: 50px;
-  /*margin: 0px 320px;*/
+  margin: 0px auto;
 }
 
 button {
