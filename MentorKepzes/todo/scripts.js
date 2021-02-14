@@ -5,20 +5,45 @@ Az Add todo gombra kattintva a szövegdoboz
 tartalma kerüljön a lista végére
 */
 
-$(function(){
+$(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön, ha a jQuery nem töltött be
 
-    $('#addToDo').click(()=>{
-        let item = $('#inputField').val();
-        $('ul').append(`<li>${item}</li>`);
-        athuzas();
+    $('#addToDo').click(()=>{               // ha a gombra kattintunk
+        let item = $('#inputField').val();  // az item legyen egyenlő a beviteli mező értékével
+                                            // a rendezetlen listához hozzáadjuk egy új elem formájában az itemet
+       
+       $('ul').append(`<li>                
+                            <span>${item}</span>
+                            <img src="images/trash.svg" class="trash" alt="Remove">
+                            <img src="images/tick.svg" class="ok" alt="OK">
+                        </li>`);
+                        
+        athuzas();                          // ha már volt valami a listában, azt is lehessen áthúzni
+       
+        $('.trash').click((event)=>{        // törlés a listából
+            $(event.target.parentElement).remove();
+        });
+
+        $('.ok').click((event)=>{        // színezés a listában
+            $(event.target.li).css('color', 'red');
+        });
+
+         // reset input field 
+        $("#inputField").val('');
     });
 
-    function athuzas() {
-        $('li').click((event)=>{
-            $(event.target).css('text-decoration','line-through')
+    $('.trash').click((event)=>{
+        $(event.target.parentElement).remove();
+    });
+
+   
+
+    function athuzas() {                    // áthúzó függvény
+        $('li').click((event)=>{            // ha egy listaelemre kattintunk, kiváltódik egy esemény
+            $(event.target).css('text-decoration','line-through') // amely esemény egy css-ben értelmezett aláhúzás
         });
     }
 
-    athuzas();
+    athuzas(); // fusson az áthúzás függvény az új listaelemekre is
 
 });
+
