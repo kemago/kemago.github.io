@@ -12,23 +12,23 @@ body {
   width: 500px;
   /*height: 800px;  ez nem kell, mert azt akarjuk, hogy a tartalom töltse ki mindig aktuálisan a magasságot*/ 
   background-color:goldenrod;
-  padding: 10px 100px 0 100px; /* EZt benne hagytam, mert így jobban tetszik*/
+  padding: 10px 20px 0 50px; /* EZt benne hagytam, mert így jobban tetszik*/
 }
 
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 60px;
+  font-family: 'Reggae One', cursive;
+  font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 5px; 
 }
 
 h3 {
+  font-family: 'Gorditas', cursive;
   font-size: 20px;
   text-transform: capitalize;
 }
 
 h1, h3 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
   color: brown;
   text-align: center;
 
@@ -42,32 +42,45 @@ h1, h3 {
 }
 
 #inputField {
-  width: 200px;
-  height: 40px;
+  width: 200x;
+  height: 22px;
   background-color:navajowhite;
-  font-size: 20px;
-  margin-right: 0;
+  font-size: 14px;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
   border: 0;
-  box-shadow: 0 0 3px rgb(111, 111, 111) inset; / *árnyék a doboz körül */
+  box-shadow: 0 0 1px rgb(111, 111, 111) inset; / *árnyék a doboz körül */
 }
 
 .addGomb {
   background-color:lightcoral;
   color: white;
   width: 100px;
-  height: 40px;
-  font-size: 20px;
+  height: 25px;
+  font-size: 21px;
+  font-family: 'Indie Flower', cursive;
   margin-left: 0;
   border: 0px;
-  box-shadow: 0 0 3px rgb(189, 13, 13) inset;
+  box-shadow: 0 0 2px rgb(189, 13, 13) inset;
+}
+
+.inputLine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55px;
+}
+
+ul {
+  width: 80%; /* a lista a bennfoglaló elem szélességének 80%-a*/
 }
 
 li {
   list-style-type: None;
   display: flex;
   align-items: center; /* a sor középtengelyére igazodik*/
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  
+  font-family: 'Indie Flower', cursive;
+  font-size: 14px;
 }
 
 .trash, .ok {
@@ -76,8 +89,8 @@ li {
   margin: 2px;
 }
 
-ul {
-  width: 80%; /* a lista a bennfoglaló elem szélességének 80%-a*/
+.myToDoList {
+  background-color: rgba(230, 211, 183, 0.555);
 }
 
 span {

@@ -10,13 +10,15 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
     $('#addToDo').click(()=>{               // ha a gombra kattintunk
         let item = $('#inputField').val();  // az item legyen egyenlő a beviteli mező értékével
                                             // a rendezetlen listához hozzáadjuk egy új elem formájában az itemet
-       
-       $('ul').append(`<li>                
-                            <span>${item}</span>
-                            <img src="images/trash.svg" class="trash" alt="Remove">
-                            <img src="images/tick.svg" class="ok" alt="OK">
-                        </li>`);
-                        
+       // csak akkor tudunk beírni valamit, ha nem üres a mező
+       if ($('#inputField').val() != '') {
+          $('ul').append(`<li>                
+                    <span>${item}</span>
+                    <img src="images/trash.svg" class="trash" alt="Remove">
+                    <img src="images/tick.svg" class="ok" alt="OK">
+                </li>`); 
+       }
+                      
         athuzas();                          // ha már volt valami a listában, azt is lehessen áthúzni
        
         $('.trash').click((event)=>{        // törlés a listából
@@ -24,7 +26,7 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
         });
 
         $('.ok').click((event)=>{        // színezés a listában
-            $(event.target.li).css('color', 'red');
+            $(event.target.parentElement).css('color', 'MintCream');
         });
 
          // reset input field 
@@ -35,7 +37,9 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
         $(event.target.parentElement).remove();
     });
 
-   
+    $('.ok').click((event)=>{        // színezés a listában
+        $(event.target.parentElement).css('color', 'MintCream');
+    });
 
     function athuzas() {                    // áthúzó függvény
         $('li').click((event)=>{            // ha egy listaelemre kattintunk, kiváltódik egy esemény
