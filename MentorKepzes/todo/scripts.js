@@ -27,7 +27,6 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
             $(event.target.parentElement).remove();
         });
 
-    
         kijeloles();
 
          // reset input field 
@@ -66,4 +65,3 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
     athuzas(); // fusson az áthúzás függvény az új listaelemekre is
     kijeloles();
 });
-
