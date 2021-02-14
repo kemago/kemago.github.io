@@ -7,6 +7,8 @@ tartalma kerüljön a lista végére
 
 $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön, ha a jQuery nem töltött be
 
+    let onBit = true; // kapcsoló a listaelemek színezgetéséhez
+
     $('#addToDo').click(()=>{               // ha a gombra kattintunk
         let item = $('#inputField').val();  // az item legyen egyenlő a beviteli mező értékével
                                             // a rendezetlen listához hozzáadjuk egy új elem formájában az itemet
@@ -48,7 +50,7 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
 
     function kijeloles() {
         $('.ok').click((event)=>{        // színezés a listában
-            let onBit = true; // kapcsoló a listaelemek színezgetéséhez
+           
             if (onBit == true) {
                 $(event.target.parentElement).css('color', 'MintCream');
                 $(event.target).attr('src', 'images/correct_tick.svg');
