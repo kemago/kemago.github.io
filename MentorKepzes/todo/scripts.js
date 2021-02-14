@@ -25,9 +25,8 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
             $(event.target.parentElement).remove();
         });
 
-        $('.ok').click((event)=>{        // színezés a listában
-            $(event.target.parentElement).css('color', 'MintCream');
-        });
+    
+        kijeloles();
 
          // reset input field 
         $("#inputField").val('');
@@ -47,7 +46,22 @@ $(function(){  // ez a külső függvny azért kell, hogy egyszerre kiderüljön
         });
     }
 
-    athuzas(); // fusson az áthúzás függvény az új listaelemekre is
+    function kijeloles() {
+        $('.ok').click((event)=>{        // színezés a listában
+            let onBit = true; // kapcsoló a listaelemek színezgetéséhez
+            if (onBit == true) {
+                $(event.target.parentElement).css('color', 'MintCream');
+                $(event.target).attr('src', 'images/correct_tick.svg');
+                onBit = false;
+            } else {
+                $(event.target.parentElement).css('color', 'DarkSlateGrey');
+                $(event.target).attr('src', 'images/tick.svg');
+                onBit = true;
+            }
+        });
+    }
 
+    athuzas(); // fusson az áthúzás függvény az új listaelemekre is
+    kijeloles();
 });
 
