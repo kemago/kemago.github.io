@@ -8,6 +8,7 @@ body {
   padding: 80px;
 }
 
+
 #container {
   width: 500px;
   /*height: 800px;  ez nem kell, mert azt akarjuk, hogy a tartalom töltse ki mindig aktuálisan a magasságot*/ 
