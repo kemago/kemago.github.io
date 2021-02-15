@@ -1,6 +1,6 @@
 body {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; 
   width: 100vh; /*Viewport Height*/ 
   margin: 0px 0px 0px 0px;
@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-  width: 500px;
+  width: 400px;
   height: 800px;  /* ez nem kell, mert azt akarjuk, hogy a tartalom töltse ki mindig aktuálisan a magasságot*/ 
   background-color:rgba(218, 165, 32, 0.226);
   padding: 10px 20px 0 50px; /* EZt benne hagytam, mert így jobban tetszik*/
@@ -16,7 +16,7 @@ body {
 
 .header {
   background-color: rgba(59, 58, 55, 0.918);
-  width: 550px;
+  width: 450px;
   height: 26px;
   text-align: center;
   color:rgba(235, 230, 223, 0.555);
@@ -79,7 +79,7 @@ h1, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 460px;
+  width: 360px;
   height: 95px;
 }
 
