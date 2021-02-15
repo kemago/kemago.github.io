@@ -1,0 +1,80 @@
+body {
+    background: rgb(197,205,207);
+    background: radial-gradient(circle, rgba(197,205,207,1) 0%, rgba(209,168,110,0.5) 50%, rgba(255,235,205,0.01) 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    height: 526px;
+    width: 740px;
+    background-color: lightblue;
+}
+
+#slider {
+    display: flex;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199,197,197);
+    border-radius: 20px 0 0 20px;
+   
+}
+
+#la {
+    transform: rotate(180deg);
+    
+}
+
+#ra, #la {
+    width: 160px;
+}
+
+#ra img, #la img {
+    width: 140px;
+}
+
+#photo-container {
+    position: relative;
+}
+
+#gray-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+#thumbnails {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    overflow: hidden;
+    box-shadow: 0 15px 15px -10px black;
+}
+
+.thumbnail > img {
+    height: 100%
+}
+
+.thumbnail:hover #photo-title {
+    display: block;
+  }
