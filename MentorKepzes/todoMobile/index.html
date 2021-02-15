@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Indie+Flower&family=Reggae+One&display=swap" rel="stylesheet">
+    <title>My Simple Todo Application</title>
+</head>
+<body> 
+    <div id="container">
+        <div class="header"> My Simple Todo Application </div>
+
+        <h1>Todos</h1>
+
+        <div class='inputLine'>
+            <input 
+                type="text" 
+                name="inputField" 
+                id="inputField"  
+                value="To Do Something"
+            >
+            <button class='addGomb' id="addToDo">Add</button>
+        </div>
+
+        <h3>My list</h3>
+
+        <ul class=myToDoList>
+            <li>
+                <span> Buy milk </span>
+                <img src="images/trash.svg" class="trash" alt="Remove">
+                <img src="images/tick.svg" class="ok" alt="OK">
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>  
+
+</body>
+</html>

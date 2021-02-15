@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vh; /*Viewport Height*/ 
+  margin: 0px 100px 0px 100px;
+  padding: 80px 0 0 0;
+}
+
+#container {
+  width: 500px;
+  height: 800px;  /* ez nem kell, mert azt akarjuk, hogy a tartalom töltse ki mindig aktuálisan a magasságot*/ 
+  background-color:rgba(218, 165, 32, 0.226);
+  padding: 10px 20px 0 50px; /* EZt benne hagytam, mert így jobban tetszik*/
+}
+
+.header {
+  background-color: rgba(59, 58, 55, 0.918);
+  width: 550px;
+  height: 26px;
+  text-align: center;
+  color:rgba(235, 230, 223, 0.555);
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: -50px;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Reggae One', cursive;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 5px; 
+}
+
+h3 {
+  font-family: 'Gorditas', cursive;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+h1, h3 {
+  color: brown;
+  text-align: center;
+}
+
+#content {
+  width: 420px;
+  height: 500px;
+  background-color: white;
+  padding: 20px 90px;
+}
+
+#inputField {
+  width: 100vh;
+  height: 22px;
+  background-color:navajowhite;
+  font-size: 14px;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  border: 0;
+  box-shadow: 0 0 1px rgb(111, 111, 111) inset; / *árnyék a doboz körül */
+}
+
+.addGomb {
+  background-color:lightcoral;
+  color: white;
+  width: 100px;
+  height: 25px;
+  font-size: 21px;
+  font-family: 'Indie Flower', cursive;
+  margin-left: 0;
+  border: 0px;
+  box-shadow: 0 0 2px rgb(189, 13, 13) inset;
+}
+
+.inputLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
+  height: 95px;
+}
+
+ul {
+  width: 92%; /* a lista a bennfoglaló elem szélességének 80%-a*/
+  padding: 10px 0; 
+}
+
+li {
+  list-style-type: None;
+  display: flex;
+  align-items: center; /* a sor középtengelyére igazodik*/
+  margin: 0px;
+  font-family: 'Indie Flower', cursive;
+  color: DarkSlateGrey;
+  font-size: 16px;
+}
+
+.trash, .ok {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+}
+
+.myToDoList {
+  background-color: rgba(230, 211, 183, 0.555);
+  box-shadow: 5 5 3px sandybrown outset;
+}
+
+span {
+  flex-grow: 1; /* így kihúz a bennfoglaló elem jobb szélére */
+}
