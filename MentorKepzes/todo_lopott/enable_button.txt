@@ -1,0 +1,4 @@
+$('#button3').on('click', () => {
+    $('button').css('background-color', $('#text').val());
+    $('#button3').attr('disabled', true);
+});
