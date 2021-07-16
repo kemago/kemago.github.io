@@ -3,17 +3,17 @@ function () {
     let currentPhoto = 0;
     let imagesData = [
         {
-            photo: 'images/bora-bora.jpg',
+            photo: 'images/01.jpg',
             title: Bora-Bora,
             description: 'What hapenned here, why is this a very nice image.'
         },
         {
-            photo: 'images/island.jpg',
+            photo: 'images/02.jpg',
             title: Island,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
         {
-            photo: 'images/sunset2.jpg',
+            photo: 'images/03.jpg',
             title: Sunset,
             description: 'Suscipit itaque fugiat quibusdam amet dolor, natus, pariatur repudiandae illum.'
         }
