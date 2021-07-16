@@ -3,18 +3,18 @@ let currentPhoto = 0;
 // tömb a képek adataival
 let imagesData = [ 
     {
-        photo: 'images/bora-bora.jpg',
+        photo: 'images/01.jpg',
         title: 'Bora-Bora',
         description: 'What happened here, why is this a very nice image.'
         },
     {
-        photo: 'images/sunset.jpg',
+        photo: 'images/02.jpg',
         title: 'Sunset',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
             
     },
     {
-        photo: 'images/beach.jpg',
+        photo: 'images/03.jpg',
         title: 'Beach',
         description: 'Suscipit itaque fugiat quibusdam amet dolor, natus, pariatur repudiandae illum.'
     }
