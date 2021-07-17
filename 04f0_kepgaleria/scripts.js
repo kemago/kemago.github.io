@@ -5,18 +5,48 @@ let imagesData = [
     {
         photo: 'images/01.jpg',
         title: 'Bora-Bora',
-        description: 'What happened here, why is this a very nice image.'
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates voluptatibus nisi eaque illum aut itaque fugit nostrum, accusamus ratione optio placeat, aspernatur quia quasi ipsa sint unde assumenda harum?'
         },
     {
         photo: 'images/02.jpg',
         title: 'Sunset',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, sequi, dolorum cum error earum praesentium eos saepe nesciunt deleniti veniam iste natus, magnam facilis quasi porro voluptas nisi sed officia!'
             
     },
     {
         photo: 'images/03.jpg',
         title: 'Beach',
-        description: 'Suscipit itaque fugiat quibusdam amet dolor, natus, pariatur repudiandae illum.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos culpa neque eum molestiae eligendi, libero architecto perspiciatis aspernatur iste in sint at, ratione harum et eveniet rem. Facilis, repellat magni!'
+    },
+    {
+      photo: 'images/01.jpg',
+      title: 'Bora-Bora',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates voluptatibus nisi eaque illum aut itaque fugit nostrum, accusamus ratione optio placeat, aspernatur quia quasi ipsa sint unde assumenda harum?'
+    },
+    {
+      photo: 'images/02.jpg',
+      title: 'Sunset',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, sequi, dolorum cum error earum praesentium eos saepe nesciunt deleniti veniam iste natus, magnam facilis quasi porro voluptas nisi sed officia!'      
+    },
+    {
+      photo: 'images/03.jpg',
+      title: 'Beach',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos culpa neque eum molestiae eligendi, libero architecto perspiciatis aspernatur iste in sint at, ratione harum et eveniet rem. Facilis, repellat magni!'
+    },
+    {
+      photo: 'images/01.jpg',
+      title: 'Bora-Bora',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates voluptatibus nisi eaque illum aut itaque fugit nostrum, accusamus ratione optio placeat, aspernatur quia quasi ipsa sint unde assumenda harum?'
+    },
+    {
+      photo: 'images/02.jpg',
+      title: 'Sunset',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, sequi, dolorum cum error earum praesentium eos saepe nesciunt deleniti veniam iste natus, magnam facilis quasi porro voluptas nisi sed officia!'      
+    },
+    {
+      photo: 'images/03.jpg',
+      title: 'Beach',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos culpa neque eum molestiae eligendi, libero architecto perspiciatis aspernatur iste in sint at, ratione harum et eveniet rem. Facilis, repellat magni!'
     }
 ];
 
@@ -51,15 +81,15 @@ $('#la').click(() => {
 imagesData.forEach((item,index) => {
     // thumbnail-sorozat 
     $('#thumbnails').append(`<div class="thumbnail" data-number="${index}">
-                                <img src="${item.photo}" alt="${item.title}"
+                                <img src="${item.photo}" alt="${item.title}" data-number="${index}"
                             </div>`);
     // kattintás egy thumbnail-en
     $('.thumbnail').click((event)=>{
-        let indexClicked = $(event.target).attr('data-number');
-        let photoNumber = parseInt(indexClicked);
+        let photoNumber = parseInt($(event.target).attr('data-number'));
+        //let photoNumber = parseInt(indexClicked);
         loadImage(photoNumber);
     });
-    $( '.thumbnail' ).mouseover(function(event) {
-        $( ".active").text($(event.target).attr('src'));
+    $( 'thumbnail' ).mouseover(function(event) {
+        $('.active').text($(event.target).attr('src'));
     });
 });
