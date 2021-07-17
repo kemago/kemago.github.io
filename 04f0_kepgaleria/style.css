@@ -12,7 +12,6 @@ body {
 #container {
   height: 520px;
   width: 920px;
-  background: rgba(250,247,247,1) 100%);
 }
 
 #slider {
@@ -31,7 +30,7 @@ nav {
   border-radius: 20px 0 0 20px;
 }
 
-#la {
+#ra {
   transform: rotate(180deg);
 }
 
@@ -40,7 +39,7 @@ nav {
 }
 
 #ra img, #la img {
-  width: 140px;
+  width: 40px;
 }
 
 #photo-container {
