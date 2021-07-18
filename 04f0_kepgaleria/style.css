@@ -44,6 +44,8 @@ nav {
 
 #photo-container {
   position: relative;
+  /* az alsó szürke csík kiküszöbölésére, de nem mindegyik képnél */
+  height: 365px;
 }
 
 #gray-container {
