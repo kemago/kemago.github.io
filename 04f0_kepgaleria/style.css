@@ -77,6 +77,17 @@ nav {
   height: 100%
 }
 
+.title {
+  display: none;
+  position: relative;
+  background: grey;
+  color: white;
+  border-radius: 50px;
+  padding: 5px;
+  top: -35px;
+  text-align: center;
+}
+
 .thumbnail:hover #photo-title {
   display: block;
 }
