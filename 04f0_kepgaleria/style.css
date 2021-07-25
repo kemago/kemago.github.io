@@ -88,6 +88,6 @@ nav {
   text-align: center;
 }
 
-.thumbnail:hover #photo-title {
+.thumbnail:hover .title #photo-title {
   display: block;
 }
